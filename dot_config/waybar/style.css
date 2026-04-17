@@ -1,0 +1,153 @@
+/* @import "../omarchy/current/theme/waybar.css"; */
+
+* {
+  /* background-color: @background; */
+  background-color: transparent;
+  color: #94e2d5;
+
+  border: none;
+  border-radius: 10px;
+  min-height: 0;
+  font-family: 'CaskaydiaMono Nerd Font';
+  font-size: 16px;
+  font-weight: bold;
+}
+
+
+.modules-center,
+.modules-left,
+.modules-right {
+  margin-right: 8px;
+  margin-left: 8px;
+  border-radius: 10px;
+  opacity:0.7;
+}
+
+.modules-right,
+.modules-left {
+  background-color: #000000;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+.modules-center {
+  padding: 0px;
+}
+
+#tray menu {
+  background-color: #101010;
+  opacity: 0.7;
+}
+
+#workspaces button {
+  all: initial;
+  /* padding: 0 3px; */
+  margin: 0 1.5px;
+  min-width: 9px;
+  border-radius: 12px;
+  padding-right: 15px;
+  padding-left: 15px;
+  background-color: #6c7086;
+  box-shadow:
+    8px 8px 16px #b6b9ba
+    -8px -8px 16px #fafafd;
+  background-image:
+    linear-gradient(145deg, #6c7086, #a4a6a8)
+}
+
+#workspaces button.active {
+  min-width: 25px;
+  background-color: #000000;
+  opacity: 1.0;
+  box-shadow:
+    8px 8px 16px #b6b9ba
+    -8px -8px 16px #fafafd;
+  /* background-image: */
+  /*   linear-gradient(145deg, #f4f6f8, #b6b6ba) */
+}
+
+#submap {
+  color: red;
+}
+
+
+#workspaces button.empty {
+  opacity: 0.5;
+}
+
+#cpu,
+#battery,
+#pulseaudio,
+#custom-omarchy,
+#custom-screenrecording-indicator,
+#custom-update {
+  min-width: 12px;
+  margin: 0 7.5px;
+}
+
+#pulseaudio-slider {
+  min-width: 50px;
+  /* background-color: #aaaaaa; */
+}
+
+#pulseaudio-slider trough {
+  min-width: 80px;
+  min-height: 8px;
+  border-radius: 5px;
+  /* background: black; */
+  background-color: #aaaaaa;
+}
+
+#tray {
+  margin-right: 16px;
+  background-color: #000000;
+}
+
+#bluetooth {
+  margin-right: 17px;
+}
+
+#network {
+  margin-right: 13px;
+}
+
+#custom-expand-icon {
+  margin-right: 18px;
+}
+
+tooltip {
+  padding: 2px;
+  background-color: #000000;
+}
+
+#custom-update {
+  font-size: 10px;
+}
+
+#clock {
+  margin-left: 5px;
+}
+
+.hidden {
+  opacity: 0;
+}
+
+#custom-screenrecording-indicator {
+  min-width: 12px;
+  margin-left: 5px;
+  font-size: 10px;
+  padding-bottom: 1px;
+}
+
+#custom-screenrecording-indicator.active {
+  color: #a55555;
+}
+
+#custom-voxtype {
+  min-width: 12px;
+  margin: 0 0 0 7.5px;
+}
+
+#custom-voxtype.recording {
+  color: #a55555;
+}
