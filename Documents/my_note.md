@@ -48,8 +48,16 @@ git add <file path>
 git restore .
 git commit -m "Cherry picked changes made in commit <commit hash> for file <file>"
 ```
-```
 
-
-
+### chezmoi managed dotfiles
+* initialization: `chezmoi init`
+* list files: `chezmoi managed --include=files`
+* add files/folders: `chezmoi add <file/folder>`
+* go to repo folder: `chezmoi cd`
+* check difference: `chezmoi diff`
+* re-add: `chezmoi re-add [<file/folder.]`
+* edit and apply: `chezmoi edit <file> && chezmoi -v apply`
+* purge existing: `chezmoi purge`
+* apply from remote: `chezmoi init --apply <repo>`
+* short form if remote is from github and repo name is `dotfiles`: `chezmoi init --apply <github user name>`
 
